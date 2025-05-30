@@ -1,0 +1,291 @@
+{
+  "config": "{\"version\":\"5.40\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU11\",\"version\":\"5.41\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU11",
+            "path": "BaseThemes/CY22SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Comparison_Of_Different_Variables",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"43bdc96dc7abf1d439ef\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":606.5200422117624,\"height\":458.3205748840014}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(sheet1.duration)\"}],\"Category\":[{\"queryRef\":\"sheet1.title\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"duration\"}},\"Function\":4},\"Name\":\"Sum(sheet1.duration)\",\"NativeReferenceName\":\"Sum of duration1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"title\"},\"Name\":\"sheet1.title\",\"NativeReferenceName\":\"title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"duration\"}},\"Function\":4}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Video Title'\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Video Duration in Seconds'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 458.32,
+          "width": 606.52,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"64d4a4ee683c0ab86464\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":468.3205748840014,\"width\":606.5200422117624,\"height\":251.67942511599858,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"X\":[{\"queryRef\":\"Sum(sheet1.TagCount)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(sheet1.viewCount)\"}],\"Category\":[{\"queryRef\":\"sheet1.title\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TagCount\"}},\"Function\":0},\"Name\":\"Sum(sheet1.TagCount)\",\"NativeReferenceName\":\"Max of TagCount\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"viewCount\"}},\"Function\":0},\"Name\":\"Sum(sheet1.viewCount)\",\"NativeReferenceName\":\"Max of TagCount1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"title\"},\"Name\":\"sheet1.title\",\"NativeReferenceName\":\"title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TagCount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.68,
+          "width": 606.52,
+          "x": 0.00,
+          "y": 468.32,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e2298cb3df536db7c0ba\",\"layouts\":[{\"id\":0,\"position\":{\"x\":766.7926095404407,\"y\":0,\"width\":513.2073904595593,\"height\":458.3205748840014,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(sheet1.viewCount)\"}],\"Category\":[{\"queryRef\":\"sheet1.title\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"viewCount\"}},\"Function\":4},\"Name\":\"Sum(sheet1.viewCount)\",\"NativeReferenceName\":\"Sum of viewCount1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"title\"},\"Name\":\"sheet1.title\",\"NativeReferenceName\":\"title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"viewCount\"}},\"Function\":4}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Video Title'\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Views'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 458.32,
+          "width": 513.21,
+          "x": 766.79,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"fa861509b9314cf8b2c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":766.7926095404407,\"y\":468.3205748840014,\"width\":513.2073904595593,\"height\":251.67942511599858,\"z\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(T-Series.duration)\"}],\"Category\":[{\"queryRef\":\"T-Series.viewCount\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"duration\"}},\"Function\":1},\"Name\":\"Sum(T-Series.duration)\",\"NativeReferenceName\":\"Sum of duration1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"},\"Name\":\"T-Series.viewCount\",\"NativeReferenceName\":\"viewCount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"duration\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.68,
+          "width": 513.21,
+          "x": 766.79,
+          "y": 468.32,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Intersting",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection56abbc0a05778d706977",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"03973ffa555567b01523\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.220713073005093,\"y\":242.9677531269894,\"width\":100,\"height\":40,\"z\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 10.22,
+          "y": 242.97,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"03cd5fb8580e592da7f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.6151920425020693,\"y\":473.500257859062,\"z\":10000,\"width\":1040.1407058744703,\"height\":101.54407946531768}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Most Commented Video by Percentage'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter63e0bc48372287ee7957\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Commented_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.54,
+          "width": 1040.14,
+          "x": 0.62,
+          "y": 473.50,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"0e7fc3ddf208391c23b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.1407058744703,\"y\":0,\"z\":3000,\"width\":240.1380257625756,\"height\":101.54407946531768}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.viewCount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0},\"Name\":\"Sum(T-Series.viewCount)\",\"NativeReferenceName\":\"Sum of viewCount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Most Viewed Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter9ba969d2c40d2b1a2333\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"viewCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.54,
+          "width": 240.14,
+          "x": 1040.14,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"0f6c2b1427469da3e812\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.6151920425020693,\"y\":589.6292901171269,\"z\":12000,\"width\":1040.2716468590831,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E82A38'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Least Commented Video by Percentage'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6352596dc6167f099cd8\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"title\"}},\"Function\":3}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter21cb99e252d6f3f0a06d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filtere15812db246a95441208\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Commented_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filter9fa9541b44a245b28ad2\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"commentCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"commentCount\"}},\"Right\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":3}]",
+          "height": 101.46,
+          "width": 1040.27,
+          "x": 0.62,
+          "y": 589.63,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"1e2cb9488227b3e216e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.615192042502068,\"y\":483.500257859062,\"width\":100,\"height\":40,\"z\":11000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 10.62,
+          "y": 483.50,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"2e98c6f6e8f89cee414c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.2207130730050929,\"y\":349.0967853850541,\"z\":7000,\"width\":1040.2716468590831,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E82A38'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Least Liked Video by Percentage'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6352596dc6167f099cd8\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"title\"}},\"Function\":3}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter21cb99e252d6f3f0a06d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filtera6cee4dd0160d6d3ba72\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Like_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filter13e309409cb9d0467ace\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"likeCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"likeCount\"}},\"Right\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":3}]",
+          "height": 101.46,
+          "width": 1040.27,
+          "x": 0.22,
+          "y": 349.10,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"2f3fa6e7f0fe01543460\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.2716468590831,\"y\":116.12903225806451,\"z\":4000,\"width\":239.59252971137522,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.viewCount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0},\"Name\":\"Sum(T-Series.viewCount)\",\"NativeReferenceName\":\"Sum of viewCount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Count of Least Viewed Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6595c3732fcec0136ae3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"viewCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1},{\"name\":\"Filter549f1530b2ff4c75ffa1\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"IsCurrentMonth\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"IsCurrentMonth\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1},{\"name\":\"Filter86b5a6c569842f67dffb\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 101.46,
+          "width": 239.59,
+          "x": 1040.27,
+          "y": 116.13,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6f77d56a36a1e851b63f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.1159400703632,\"y\":590.1420542488886,\"z\":14000,\"width\":239.59252971137522,\"height\":102.68251273344652}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.Commented_Percentage)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":0},\"Name\":\"Sum(T-Series.Commented_Percentage)\",\"NativeReferenceName\":\"Sum of Commented_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% of Least Commented Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter86b5a6c569842f67dffb\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1},{\"name\":\"Filter43ff6b010b86692cf158\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Commented_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1},{\"name\":\"Filterc87fae92b569b0c698c3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"commentCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"commentCount\"}},\"Right\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 102.68,
+          "width": 239.59,
+          "x": 1040.12,
+          "y": 590.14,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"9c460748955573265b08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":116.12903225806451,\"z\":2000,\"width\":1040.2716468590831,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E82A38'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Least Viewed Video'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter6352596dc6167f099cd8\",\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"title\"}},\"Function\":3}},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter5e318422de09cef52c67\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"IsCurrentMonth\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"IsCurrentMonth\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filtere1c46703386a085c5bd3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"viewCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filter21cb99e252d6f3f0a06d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":3}]",
+          "height": 101.46,
+          "width": 1040.27,
+          "x": 0.00,
+          "y": 116.13,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b4bb650d6c3229d2eb07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.2716468590831,\"y\":349.60950764006793,\"z\":9000,\"width\":239.59252971137522,\"height\":102.68251273344652}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.Like_Percentage)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0},\"Name\":\"Sum(T-Series.Like_Percentage)\",\"NativeReferenceName\":\"Sum of Like_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% of Least Liked Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter86b5a6c569842f67dffb\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"ValidData\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ValidData\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":1},{\"name\":\"Filter12d9de0bcce8189c0db4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Like_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1},{\"name\":\"Filter759c2698b40586bb2423\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"likeCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"likeCount\"}},\"Right\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 102.68,
+          "width": 239.59,
+          "x": 1040.27,
+          "y": 349.61,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"b69171bb10b7f7874435\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.1159400703632,\"y\":474.01302199082414,\"z\":13000,\"width\":239.59252971137522,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.Commented_Percentage)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":0},\"Name\":\"Sum(T-Series.Commented_Percentage)\",\"NativeReferenceName\":\"Sum of Commented_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% of Most Commented Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter1794a74644d534945131\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Commented_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Commented_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.46,
+          "width": 239.59,
+          "x": 1040.12,
+          "y": 474.01,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"ca2d40b219e275edbf7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1040.2716468590831,\"y\":233.4804753820034,\"z\":8000,\"width\":239.59252971137522,\"height\":101.46010186757216}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(T-Series.Like_Percentage)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0},\"Name\":\"Sum(T-Series.Like_Percentage)\",\"NativeReferenceName\":\"Sum of Like_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% of Most Liked Video'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter2033f88bd0e82eb00ba9\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Like_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.46,
+          "width": 239.59,
+          "x": 1040.27,
+          "y": 233.48,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ea6528f0e395c5bc56f0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f4f28a9eb4b8324bedf0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1040.1407058744703,\"height\":101.54407946531768}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Most Viewed Video'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtere1c46703386a085c5bd3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"viewCount\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":4}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.54,
+          "width": 1040.14,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f7389e8184a1b8f82168\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.2207130730050929,\"y\":232.96775312698944,\"z\":5000,\"width\":1040.1407058744703,\"height\":101.54407946531768}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":3},\"Name\":\"Min(T-Series.title)\",\"NativeReferenceName\":\"First title\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Most Liked Video by Percentage'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtera1840989dbe7df3359f8\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"T-Series\"}},\"Property\":\"Like_Percentage\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}},\"Function\":0}}}],\"Top\":1}}},\"Type\":2},{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Like_Percentage\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1}]",
+          "height": 101.54,
+          "width": 1040.14,
+          "x": 0.22,
+          "y": 232.97,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Stats",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6985cc4b60940281d64c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4deac1d5317f6fc59820\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":206.5874363327674,\"z\":4000,\"width\":1279.8641765704585,\"height\":261.59592529711375}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(T-Series.viewCount)\"}],\"Category\":[{\"queryRef\":\"T-Series.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0},\"Name\":\"Sum(T-Series.viewCount)\",\"NativeReferenceName\":\"Sum of viewCount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Year\"},\"Name\":\"T-Series.Year\",\"NativeReferenceName\":\"Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"viewCount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 261.60,
+          "width": 1279.86,
+          "x": 0.00,
+          "y": 206.59,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"75751865ff3f4730086d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":531.748726655348,\"y\":41.56196943972835,\"z\":3000,\"width\":248.14940577249575,\"height\":157.69100169779287}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T-Series.ViewtoSubscribers\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ViewtoSubscribers\"},\"Name\":\"T-Series.ViewtoSubscribers\",\"NativeReferenceName\":\"ViewtoSubscribers\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ViewtoSubscribers\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Percentage of Subscribers viewing videos on average'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.69,
+          "width": 248.15,
+          "x": 531.75,
+          "y": 41.56,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8a115a3005fab524eced\",\"layouts\":[{\"id\":0,\"position\":{\"x\":656.4346349745331,\"y\":479.18505942275044,\"z\":6000,\"width\":623.4295415959253,\"height\":240.8149405772496}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"T-Series.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(T-Series.title)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Month\"},\"Name\":\"T-Series.Month\",\"NativeReferenceName\":\"Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":5},\"Name\":\"CountNonNull(T-Series.title)\",\"NativeReferenceName\":\"Count of title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 240.81,
+          "width": 623.43,
+          "x": 656.43,
+          "y": 479.19,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"a50c203e685dde2aea60\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":468.1833616298812,\"z\":5000,\"width\":640.5432937181664,\"height\":251.81663837011885}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(T-Series.title)\"}],\"Category\":[{\"queryRef\":\"T-Series.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Year\"},\"Name\":\"T-Series.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":5},\"Name\":\"CountNonNull(T-Series.title)\",\"NativeReferenceName\":\"Count of title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"title\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 251.82,
+          "width": 640.54,
+          "x": 0.00,
+          "y": 468.18,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b7a6c5375a8aa9c31e4f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.556876061120544,\"y\":48.89643463497453,\"z\":0,\"width\":248.14940577249575,\"height\":157.69100169779287}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"sheet1.Like_Percentage\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Like_Percentage_OverAll\"},\"Name\":\"sheet1.Like_Percentage\",\"NativeReferenceName\":\"Like_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Like_Percentage_OverAll\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Overall Video Like Percentage to Views'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.69,
+          "width": 248.15,
+          "x": 8.56,
+          "y": 48.90,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e042332cbbdfa736b919\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e4d9d7281983a4694038\",\"layouts\":[{\"id\":0,\"position\":{\"x\":283.5993208828523,\"y\":40.33955857385399,\"z\":2000,\"width\":248.14940577249575,\"height\":157.69100169779287}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"T-Series.Comment_Percentage\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"T-Series\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Comment_Percentage\"},\"Name\":\"T-Series.Comment_Percentage\",\"NativeReferenceName\":\"Comment_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Comment_Percentage\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Overall Video Comment Percentage to Views'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 157.69,
+          "width": 248.15,
+          "x": 283.60,
+          "y": 40.34,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

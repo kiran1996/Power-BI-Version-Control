@@ -1,0 +1,198 @@
+table T-Series
+	lineageTag: 0387a1fc-6bc0-4443-adc1-c970957515e7
+
+	measure Like_Percentage_OverAll = SUM('T-Series'[likeCount]) / SUM('T-Series'[viewCount])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 400a725a-655e-49d8-8f55-1e3311fdce38
+
+	measure Comment_Percentage = SUM('T-Series'[commentCount]) / SUM('T-Series'[viewCount])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 5d4b9561-95b2-4b2b-9174-f1fee1562b83
+
+	measure ViewtoSubscribers = AVERAGE('T-Series'[viewCount]) / 382300000
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 15bf337c-46dc-4b96-b04c-97db3570892f
+
+	column video_id
+		dataType: string
+		lineageTag: f93d9c93-020c-488c-b046-7c1bea99ce98
+		summarizeBy: none
+		sourceColumn: video_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column channelTitle
+		dataType: string
+		lineageTag: 16d2a9b7-ec19-4371-ad1a-72bd51c602b5
+		summarizeBy: none
+		sourceColumn: channelTitle
+
+		annotation SummarizationSetBy = Automatic
+
+	column title
+		dataType: string
+		lineageTag: ec9b4596-796f-4cfa-aa5b-8e65d1e5330b
+		summarizeBy: none
+		sourceColumn: title
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: eea48068-46c6-4308-a12c-da35385e993e
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		lineageTag: b393104a-e145-477b-84c2-58d34b8bab92
+		summarizeBy: none
+		sourceColumn: tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column publishedAt
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 88ef76a8-caf0-47a0-a37c-768be80c2878
+		summarizeBy: none
+		sourceColumn: publishedAt
+
+		variation Variation
+			isDefault
+			relationship: 2e0a6ad2-3178-4b65-8bea-488affc80581
+			defaultHierarchy: LocalDateTable_1fea3069-32a8-4afb-b31b-df44d92b0eb9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column viewCount
+		dataType: int64
+		formatString: 0
+		lineageTag: e64c3b84-2e04-49ff-b9cb-3315ff9f75df
+		summarizeBy: sum
+		sourceColumn: viewCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column likeCount
+		dataType: int64
+		formatString: 0
+		lineageTag: b260f2b5-6a35-4a3f-9075-14eb31945bc0
+		summarizeBy: sum
+		sourceColumn: likeCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column favouriteCount
+		dataType: string
+		lineageTag: a81a2fc6-ce00-4734-b69b-87847b1c2319
+		summarizeBy: none
+		sourceColumn: favouriteCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column commentCount
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bfda83d-4acb-48f6-a27f-092e10a812ae
+		summarizeBy: sum
+		sourceColumn: commentCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column duration
+		dataType: int64
+		formatString: 0
+		lineageTag: f616e9a3-f1f4-4c83-b35c-f354fc96271d
+		summarizeBy: sum
+		sourceColumn: duration
+
+		annotation SummarizationSetBy = Automatic
+
+	column definition
+		dataType: string
+		lineageTag: 8b5c7c5d-f457-4592-852e-86ba732c4a1f
+		summarizeBy: none
+		sourceColumn: definition
+
+		annotation SummarizationSetBy = Automatic
+
+	column caption
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 10c6761c-dac5-46c8-a5a1-bf06978e6468
+		summarizeBy: none
+		sourceColumn: caption
+
+		annotation SummarizationSetBy = Automatic
+
+	column TagCount
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d61b385-2742-4b31-9b05-fd0714603cb5
+		summarizeBy: sum
+		sourceColumn: TagCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('T-Series'[publishedAt])
+		formatString: 0
+		lineageTag: 1cc82604-3601-48e2-872a-7bcca4107125
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = MONTH('T-Series'[publishedAt])
+		formatString: 0
+		lineageTag: 0ab485e7-140b-4189-8f45-4561030588af
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCurrentMonth = IF(MONTH('T-Series'[publishedAt]) = MONTH(TODAY()),IF(YEAR('T-Series'[publishedAt]) = YEAR(TODAY()),1,0),0)
+		formatString: 0
+		lineageTag: 735fc52d-87f1-410e-8242-66693c210599
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidData = IF('T-Series'[viewCount] < 'T-Series'[likeCount], 1, 0)
+		formatString: 0
+		lineageTag: be08f035-77da-4464-9ae7-24bb9ef363a1
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Like_Percentage = IF('T-Series'[ValidData] = 0, 'T-Series'[likeCount] / 'T-Series'[viewCount] * 100, 0)
+		formatString: 0.000
+		lineageTag: 8867cee2-e3aa-40f7-9a1a-8c14b274e0c6
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commented_Percentage = 'T-Series'[commentCount] / 'T-Series'[viewCount] * 100
+		formatString: 0.000
+		lineageTag: bc2595ac-300a-4b13-a219-01c5e483961f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition T-Series-28422b94-1d8f-4285-ae45-3945543f60c8 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\naiki\Downloads\T-series_DataSet.xlsx"), null, true),
+				    sheet1_Sheet = Source{[Item="sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"video_id", type text}, {"channelTitle", type text}, {"title", type text}, {"description", type text}, {"tags", type text}, {"publishedAt", type date}, {"viewCount", Int64.Type}, {"likeCount", Int64.Type}, {"favouriteCount", type any}, {"commentCount", Int64.Type}, {"duration", Int64.Type}, {"definition", type text}, {"caption", type logical}, {"TagCount", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

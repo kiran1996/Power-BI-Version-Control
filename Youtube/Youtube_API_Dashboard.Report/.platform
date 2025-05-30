@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Youtube_API_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bfaca449-066e-465b-aed8-40d523bdc1c2"
+  }
+}

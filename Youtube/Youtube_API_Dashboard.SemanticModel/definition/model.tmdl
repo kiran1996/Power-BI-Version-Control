@@ -1,0 +1,22 @@
+model Model
+	culture: en-AU
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-AU
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["T-Series"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table T-Series
+ref table DateTableTemplate_4bd73ca1-9de7-4c89-889c-c9a686a1d5b4
+ref table LocalDateTable_1fea3069-32a8-4afb-b31b-df44d92b0eb9
+
+ref cultureInfo en-AU
+

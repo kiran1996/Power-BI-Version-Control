@@ -1,0 +1,5 @@
+relationship 2e0a6ad2-3178-4b65-8bea-488affc80581
+	joinOnDateBehavior: datePartOnly
+	fromColumn: T-Series.publishedAt
+	toColumn: LocalDateTable_1fea3069-32a8-4afb-b31b-df44d92b0eb9.Date
+
