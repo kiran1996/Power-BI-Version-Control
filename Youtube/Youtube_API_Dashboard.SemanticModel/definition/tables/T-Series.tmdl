@@ -13,6 +13,10 @@ table T-Series
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 15bf337c-46dc-4b96-b04c-97db3570892f
 
+	measure 'Total comment' = DISTINCTCOUNT('T-Series'[description])
+		formatString: 0
+		lineageTag: 3d16893e-788e-4928-98eb-0bdcf3ed7f1b
+
 	column video_id
 		dataType: string
 		lineageTag: f93d9c93-020c-488c-b046-7c1bea99ce98
